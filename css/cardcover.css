@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.profile-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+  background-color: rgba(45, 45, 45, 0);
+  color: rgb(0, 0, 0);
+  font-smoothing: antialiased;
+}
+
+.profile-card .profile-social-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+}
+
+.profile-card .profile-social-links li {
+  display: block;
+  height: 33.4%;
+  width: 100%;
+  list-style: none;
+  background-color: rgb(129, 183, 26);
+  position: relative;
+}
+
+.profile-card .profile-social-links li:before,
+.profile-card .profile-social-links li:after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 100%;
+  width: 10px;
+  background-color: rgb(129, 183, 26);
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.profile-card .profile-social-links li:after {
+  height: 10px;
+  width: 100%;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.profile-card .profile-social-links li:hover {
+  -webkit-transform: translateZ(9px);
+  transform: translateZ(9px);
+}
+
+.profile-card .profile-social-links li:first-child {
+  background-color: rgb(0, 0, 0);
+}
+
+.profile-card .profile-social-links li:first-child:before,
+.profile-card .profile-social-links li:first-child:after {
+  background-color: rgb(0, 0, 0);
+}
+
+.profile-card .profile-social-links li:last-child {
+  background-color: rgb(72, 207, 173);
+}
+
+.profile-card .profile-social-links li:last-child:before,
+.profile-card .profile-social-links li:last-child:after {
+  background-color: rgb(72, 207, 173);
+}
+
+.profile-card .profile-social-links li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 40px;
+  line-height: 45px;
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+}
+
+.profile-card .profile-social-links li:hover a {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.linkedin li {
+    -webkit-box-shadow: 10px 10px 21px -5px rgba(87,87,87,1);
+    -moz-box-shadow: 10px 10px 21px -5px rgba(87,87,87,1);
+    box-shadow: 10px 10px 21px -5px rgba(87,87,87,1);
+}
